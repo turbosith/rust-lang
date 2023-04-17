@@ -32,7 +32,7 @@ fn calculate_statistics(numbers: &Vec<i32>) -> (f64, i32, i32) {
 }
 
 fn pig_latin(s: &str) -> String {
-    let vowels = ['a', 'e', 'i', 'o', 'u'];
+    let vowels = ['a', 'e', 'i', 'o', 'u','y'];
     s.split_whitespace()
         .map(|word| {
             let mut chars = word.chars();
@@ -69,23 +69,22 @@ fn main() {
         std::io::stdin().read_line(&mut input).expect("Ошибка");
         let tokens: Vec<&str> = input.trim().split_whitespace().collect();
 
-        if tokens.len() < 3 {
-            println!("Invalid command");
-            continue;
-        }
 
         let name = tokens[1];
-        let department = tokens[3];
+
 
         match tokens[0] {
             "add" => {
+                let department = tokens[3];
                 let employees = company.entry(department.to_string())
                     .or_insert(Vec::new());
                 employees.push(name.to_string());
                 println!("Added {} to {}", name, department);
             }
+
             "list" => {
-                if department == "company" {
+                let department = tokens[1];
+                if  department == "allcompany" {
                     let mut departments: Vec<&String> = company.keys().collect();
                     departments.sort();
                     for dept in departments {
