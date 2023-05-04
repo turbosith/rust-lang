@@ -1,13 +1,13 @@
 use std::collections::HashMap;
 
-fn calculate_statistics(numbers: &Vec<i32>) -> (f64, i32, i32) {
+fn calculate_statistics(numbers: &Vec<i32>) -> (f64, i32, i32) {//вычисление статистики
     let sum: i32 = numbers.iter().sum();
     let mean = sum as f64 / numbers.len() as f64;
 
     let mut sorted_numbers = numbers.clone();
     sorted_numbers.sort();
 
-    let median = if numbers.len() % 2 == 0 {
+    let median = if numbers.len() % 2 == 0 {//получение медианы
         let mid = numbers.len() / 2;
         (sorted_numbers[mid - 1] + sorted_numbers[mid]) / 2
     } else {
@@ -31,7 +31,7 @@ fn calculate_statistics(numbers: &Vec<i32>) -> (f64, i32, i32) {
     (mean, median, mode)
 }
 
-fn pig_latin(s: &str) -> String {
+fn pig_latin(s: &str) -> String {//функция свиной латыни
     let vowels = ['a', 'e', 'i', 'o', 'u','y'];
     s.split_whitespace()
         .map(|word| {

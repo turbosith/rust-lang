@@ -1,4 +1,4 @@
-enum Message {
+enum Message {//структура сообщения
     Quit,
     Move { x: i32, y: i32 },
     Write(String),
@@ -27,7 +27,7 @@ enum Coin {
     Quarter,
 }
 
-fn value_in_cents(coin: Coin) -> u8 {
+fn value_in_cents(coin: Coin) -> u8 {//значение в центах
     match coin {
         Coin::Penny => {
             println!("Lucky penny!");

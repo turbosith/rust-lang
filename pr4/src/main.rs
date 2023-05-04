@@ -1,4 +1,4 @@
-fn main() {
+fn main() {//работа со строками
     let my_string = String::from("hello world");
     let word = first_word(&my_string[0..6]);
     println!("{word}");
@@ -13,7 +13,7 @@ fn main() {
 
     let word = first_word(my_string_literal);
 }
-fn first_word(s: &str) -> &str {
+fn first_word(s: &str) -> &str {//функция выдающая первое слово в строке
     let bytes = s.as_bytes();
 
     for (i, &item) in bytes.iter().enumerate() {

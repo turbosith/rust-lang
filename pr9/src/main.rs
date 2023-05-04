@@ -12,9 +12,11 @@ fn main() {
     let greeting_file = File::open("hello.txt").unwrap_or_else(|error| {
         if error.kind() == ErrorKind::NotFound {
             File::create("hello.txt").unwrap_or_else(|error| {
+                //Неустранимая ошибки с макросом panic!
                 panic!("Problem creating the file: {:?}", error);
             })
         } else {
+            //Неустранимая ошибки с макросом panic!
             panic!("Problem opening the file: {:?}", error);
         }
     });
@@ -27,6 +29,7 @@ pub struct Guess {
 impl Guess {
     pub fn new(value: i32) -> Guess {
         if value < 1 || value > 100 {
+            //Неустранимая ошибки с макросом panic!
             panic!("Guess value must be between 1 and 100, got {}.", value);
         }
 

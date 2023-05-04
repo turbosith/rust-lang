@@ -2,19 +2,19 @@ struct Color(i32, i32, i32);
 
 struct Point(i32, i32, i32);
 #[derive(Debug)]
-struct Rectangle {
+struct Rectangle {//структура Прямоугольник
     width: u32,
     height: u32,
 }
 
-impl Rectangle {
+impl Rectangle {//описание метода вычисления площади
     fn area(&self) -> u32 {
         self.width * self.height
     }
 }
 
 fn main() {
-    let mut user1 = User {
+    let mut user1 = User {//создания атрибута пользователя
         active: true,
         username: String::from("someusername123"),
         email: String::from("someone@example.com"),
@@ -41,14 +41,14 @@ fn main() {
     );
 }
 
-struct User {
+struct User {//структура пользователя
     active: bool,
     username: String,
     email: String,
     sign_in_count: u64,
 }
 
-fn build_user(email: String, username: String) -> User {
+fn build_user(email: String, username: String) -> User {//создание юзера
     User {
         active: true,
         username,
