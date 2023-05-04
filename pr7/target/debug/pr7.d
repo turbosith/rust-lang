@@ -1,1 +1,0 @@
-C:\Users\Данила\Desktop\rust\rust-lang\pr7\target\debug\pr7.exe: C:\Users\Данила\Desktop\rust\rust-lang\pr7\src\garden\vegetables.rs C:\Users\Данила\Desktop\rust\rust-lang\pr7\src\garden.rs C:\Users\Данила\Desktop\rust\rust-lang\pr7\src\lib.rs C:\Users\Данила\Desktop\rust\rust-lang\pr7\src\main.rs
