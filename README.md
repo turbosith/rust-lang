@@ -16,14 +16,6 @@
 - [x] [Обобщённые типы, типажи и время жизни](https://github.com/turbosith/rust-lang/tree/main/pr10/)
 - [x] [Написание автоматизированных тестов](https://github.com/turbosith/rust-lang/tree/main/pr11/)
 - [x] [Проект с вводом/выводом (I/O): создание консольного приложения](https://github.com/turbosith/rust-lang/tree/main/pr12/)
-- [ ] [Функциональные возможности языка: итераторы и замыкания](https://github.com/turbosith/rust-lang/tree/main/pr13/)
-- [ ] [Больше о Cargo и Crates.io](https://github.com/turbosith/rust-lang/tree/main/pr14/)
-- [ ] [Умные указатели](https://github.com/turbosith/rust-lang/tree/main/pr15/)
-- [ ] [Многопоточность без страха](https://github.com/turbosith/rust-lang/tree/main/pr16/)
-- [ ] [Возможности объектно-ориентированного программирования в Rust](https://github.com/turbosith/rust-lang/tree/main/pr17/)
-- [ ] [Шаблоны и сопоставление](https://github.com/turbosith/rust-lang/tree/main/pr18/)
-- [ ] [Расширенные возможности](https://github.com/turbosith/rust-lang/tree/main/pr19/)
-- [ ] [Финальный проект: создание многопоточного веб-сервера](https://github.com/turbosith/rust-lang/tree/main/pr20/)
 
 ## Ссылки
 
